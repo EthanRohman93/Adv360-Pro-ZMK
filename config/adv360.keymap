@@ -36,11 +36,11 @@
 
         default_layer {
             bindings = <
-&tog 1          &kp N1    &kp N2     &kp N3         &kp N4            &kp N5  &kp BACKSPACE                                                                        &mo 3                  &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &none
-&kp ESC         &kp Q     &kp W      &kp E          &kp R             &kp T   &kp LEFT_PARENTHESIS                                                                 &kp RIGHT_PARENTHESIS  &kp Y   &kp U     &kp I      &kp O      &kp P     &none
-&kp LEFT_SHIFT  &kp A     &kp S      &kp D          &kp F             &kp G   &kp TAB               &kp LCTRL  &kp LALT              &kp LALT           &kp RCTRL  &kp LEFT               &kp H   &kp J     &kp K      &kp L      &kp SEMI  &kp RIGHT_SHIFT
-&kp EQUAL       &kp Z     &kp X      &kp C          &kp V             &kp B                                    &none                 &kp LGUI                                             &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp MINUS
-&mo 2           &kp CAPS  &kp GRAVE  &kp BACKSLASH  &kp SINGLE_QUOTE          &kp BSPC              &kp DEL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp ENTER  &kp SPACE                      &kp DOWN  &kp UP     &kp RIGHT  &none     &mo 2
+&tog 1          &kp N1    &kp N2  &kp N3            &kp N4            &kp N5  &kp BACKSPACE                                                                    &mo 3                  &kp N6  &kp N7     &kp N8             &kp N9   &kp N0    &none
+&kp ESC         &kp Q     &kp W   &kp E             &kp R             &kp T   &kp LEFT_PARENTHESIS                                                             &kp RIGHT_PARENTHESIS  &kp Y   &kp U      &kp I              &kp O    &kp P     &none
+&kp LEFT_SHIFT  &kp A     &kp S   &kp D             &kp F             &kp G   &kp TAB               &kp LCTRL  &kp LALT            &kp LALT         &kp RCTRL  &kp BACKSLASH          &kp H   &kp J      &kp K              &kp L    &kp SEMI  &kp RIGHT_SHIFT
+&kp EQUAL       &kp Z     &kp X   &kp C             &kp V             &kp B                                    &mo 3               &kp LGUI                                           &kp N   &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp MINUS
+&mo 2           &kp CAPS  &none   &kp LEFT_BRACKET  &kp SINGLE_QUOTE          &kp BSPC              &kp DEL    &kp LEFT_SHIFT      &kp RIGHT_SHIFT  &kp ENTER  &kp SPACE                      &kp GRAVE  &kp RIGHT_BRACKET  &none    &none     &mo 2
             >;
         };
 
@@ -66,11 +66,11 @@
 
         layer_mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                                           &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                                                                     &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR                      &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &rgb_ug RGB_COLOR_HSB(0,0,100)                                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none                           &bl BL_TOG                       &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                                           &trans                  &none     &none       &none       &none      &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                                                                     &bootloader             &none     &none       &none       &none      &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR                      &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_MEFS_CMD 5  &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                             &none      &rgb_ug RGB_COLOR_HSB(0,0,100)                                                           &none     &none       &none       &none      &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none                           &bl BL_TOG                       &rgb_ug RGB_TOG                   &bl BL_INC  &bl BL_DEC  &none      &none  &none
             >;
         };
     };
