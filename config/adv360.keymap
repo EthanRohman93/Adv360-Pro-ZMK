@@ -36,31 +36,21 @@
 
         default_layer {
             bindings = <
-&none  &kp F1  &kp F2  &kp F3    &kp F4   &kp F5  &kp F6                                                                 &kp F7      &kp F8  &kp F9         &kp F10      &kp F11  &kp F12   &none
-&none  &kp Q   &kp W   &kp E     &kp R    &kp T   &kp CAPS                                                               &kp DELETE  &kp Y   &kp U          &kp I        &kp O    &kp P     &none
-&none  &kp A   &kp S   &kp D     &kp F    &kp G   &kp TAB         &kp LEFT_ALT  &none         &none           &mo 2      &kp ESCAPE  &kp H   &kp J          &kp K        &kp L    &kp SEMI  &none
-&none  &kp Z   &kp X   &kp C     &kp V    &kp B                                 &kp LGUI      &kp ESC                                &kp N   &kp M          &kp COMMA    &kp DOT  &kp FSLH  &kp BACKSPACE
-&none  &mo 3   &mo 3   &kp HOME  &kp END          &kp LEFT_SHIFT  &kp LCTRL     &none         &kp LC(DELETE)  &kp ENTER  &kp SPACE           &kp PAGE_DOWN  &kp PAGE_UP  &none    &none     &none
+&none      &kp F1  &kp F2  &kp F3    &kp F4   &kp F5  &kp F6                                                                 &kp F7      &kp F8  &kp F9         &kp F10      &kp F11        &kp F12   &none
+&kp LC(B)  &kp Q   &kp W   &kp E     &kp R    &kp T   &kp DELETE                                                             &kp CAPS    &kp Y   &kp U          &kp I        &kp O          &kp P     &kp LC(B)
+&kp LA(D)  &kp A   &kp S   &kp D     &kp F    &kp G   &kp TAB         &kp LEFT_ALT  &none         &none           &mo 1      &kp ESCAPE  &kp H   &kp J          &kp K        &kp L          &kp SEMI  &kp LA(D)
+&kp LC(C)  &kp Z   &kp X   &kp C     &kp V    &kp B                                 &kp LGUI      &kp ESC                                &kp N   &kp M          &kp COMMA    &kp DOT        &kp FSLH  &kp LC(C)
+&kp LC(V)  &mo 3   &mo 2   &kp HOME  &kp END          &kp LEFT_SHIFT  &kp LCTRL     &none         &kp LC(DELETE)  &kp ENTER  &kp SPACE           &kp PAGE_DOWN  &kp PAGE_UP  &kp BACKSPACE  &none     &kp LC(V)
             >;
         };
 
-        layer_keypad {
+        num {
             bindings = <
 &none  &none         &none         &none            &none                 &none                  &none                                           &none  &none                 &none              &none         &none           &none         &none
 &none  &kp PERCENT   &kp TILDE     &kp GRAVE        &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &none                                           &none  &kp NON_US_BACKSLASH  &kp PIPE           &kp PLUS      &kp UNDERSCORE  &kp CARET     &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4          &kp NUMBER_5           &kp ASTERISK    &none  &none      &none  &none  &none  &kp NUMBER_6          &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0  &none
 &none  &kp HASH      &kp AT_SIGN   &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                         &none      &none                &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp EQUAL     &kp MINUS       &kp DOLLAR    &none
 &none  &none         &none         &none            &none                                        &kp LEFT_SHIFT  &none  &none      &none  &none  &none                        &none              &none         &none           &none         &none
-            >;
-        };
-
-        layer_mod {
-            bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                                           &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                                                                     &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR                      &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &rgb_ug RGB_COLOR_HSB(0,0,100)                                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none                           &bl BL_TOG                       &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
 
@@ -71,6 +61,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans  &trans
+            >;
+        };
+
+        boot {
+            bindings = <
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                                           &trans                  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                                                                     &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR                      &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                             &none      &rgb_ug RGB_COLOR_HSB(0,0,100)                                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none                           &bl BL_TOG                       &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
