@@ -36,21 +36,21 @@
 
         default_layer {
             bindings = <
-&none      &kp F1  &kp F2  &kp F3    &kp F4   &kp F5  &kp F6                                                                 &kp F7      &kp F8  &kp F9         &kp F10      &kp F11        &kp F12   &none
-&kp LC(B)  &kp Q   &kp W   &kp E     &kp R    &kp T   &kp DELETE                                                             &kp CAPS    &kp Y   &kp U          &kp I        &kp O          &kp P     &kp LC(B)
-&kp LA(D)  &kp A   &kp S   &kp D     &kp F    &kp G   &kp TAB         &kp LEFT_ALT  &none         &none           &mo 1      &kp ESCAPE  &kp H   &kp J          &kp K        &kp L          &kp SEMI  &kp LA(D)
-&kp LC(C)  &kp Z   &kp X   &kp C     &kp V    &kp B                                 &kp LGUI      &kp ESC                                &kp N   &kp M          &kp COMMA    &kp DOT        &kp FSLH  &kp LC(C)
-&kp LC(V)  &mo 3   &mo 2   &kp HOME  &kp END          &kp LEFT_SHIFT  &kp LCTRL     &none         &kp LC(DELETE)  &kp ENTER  &kp SPACE           &kp PAGE_DOWN  &kp PAGE_UP  &kp BACKSPACE  &none     &kp LC(V)
+&kp NUMBER_1  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp F6                                                                 &kp F7      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_6
+&kp NUMBER_2  &kp Q            &kp W        &kp E     &kp R       &kp T        &kp DELETE                                                             &kp CAPS    &kp Y      &kp U          &kp I         &kp O                 &kp P                  &kp NUMBER_7
+&kp NUMBER_3  &kp A            &kp S        &kp D     &kp F       &kp G        &kp TAB         &kp LEFT_ALT  &none         &none           &mo 1      &kp ESCAPE  &kp H      &kp J          &kp K         &kp L                 &kp SEMI               &kp NUMBER_8
+&kp NUMBER_4  &kp Z            &kp X        &kp C     &kp V       &kp B                                      &kp LGUI      &kp ESC                                &kp N      &kp M          &kp COMMA     &kp DOT               &kp FSLH               &kp NUMBER_9
+&kp NUMBER_5  &mo 3            &mo 2        &kp HOME  &kp END                  &kp LEFT_SHIFT  &kp LCTRL     &none         &kp LC(DELETE)  &kp ENTER  &kp SPACE              &kp PAGE_DOWN  &kp PAGE_UP   &kp BACKSPACE         &none                  &kp NUMBER_0
             >;
         };
 
         num {
             bindings = <
-&none  &none         &none         &none            &none                 &none                  &none                                           &none  &none                 &none              &none         &none           &none         &none
-&none  &kp PERCENT   &kp TILDE     &kp GRAVE        &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &none                                           &none  &kp NON_US_BACKSLASH  &kp PIPE           &kp PLUS      &kp UNDERSCORE  &kp CARET     &none
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4          &kp NUMBER_5           &kp ASTERISK    &none  &none      &none  &none  &none  &kp NUMBER_6          &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0  &none
-&none  &kp HASH      &kp AT_SIGN   &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                         &none      &none                &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp EQUAL     &kp MINUS       &kp DOLLAR    &none
-&none  &none         &none         &none            &none                                        &kp LEFT_SHIFT  &none  &none      &none  &none  &none                        &none              &none         &none           &none         &none
+&none  &kp F1             &kp F2            &kp F3          &kp F4           &kp F5  &kp F6                                                 &kp F7  &kp F8  &kp F9            &kp F10            &kp F11       &kp F12         &none
+&none  &kp TILDE          &kp GRAVE         &kp BACKSLASH   &kp PIPE         &none   &none                                                  &none   &none   &kp EQUAL         &kp PLUS           &kp MINUS     &kp UNDERSCORE  &none
+&none  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none   &none           &kp LEFT_ALT  &none      &none  &none  &none   &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NUMBER_9  &kp NUMBER_0    &none
+&none  &none              &none             &none           &none            &none                                 &none      &none                 &none   &none             &none              &none         &none           &none
+&none  &none              &none             &none           &none                    &kp LEFT_SHIFT  &none         &none      &none  &none  &none           &none             &none              &none         &none           &none
             >;
         };
 
