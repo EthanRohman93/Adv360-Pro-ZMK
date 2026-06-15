@@ -36,7 +36,7 @@
 
         default_layer {
             bindings = <
-&kp NUMBER_1  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp F6                                                                 &kp F7      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_6
+&kp NUMBER_1  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &none                                                                  &none       &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_6
 &kp NUMBER_2  &kp Q            &kp W        &kp E     &kp R       &kp T        &kp DELETE                                                             &kp CAPS    &kp Y      &kp U          &kp I         &kp O                 &kp P                  &kp NUMBER_7
 &kp NUMBER_3  &kp A            &kp S        &kp D     &kp F       &kp G        &kp TAB         &kp LEFT_ALT  &none         &none           &mo 1      &kp ESCAPE  &kp H      &kp J          &kp K         &kp L                 &kp SEMI               &kp NUMBER_8
 &kp NUMBER_4  &kp Z            &kp X        &kp C     &kp V       &kp B                                      &kp LGUI      &kp ESC                                &kp N      &kp M          &kp COMMA     &kp DOT               &kp FSLH               &kp NUMBER_9
@@ -46,11 +46,11 @@
 
         num {
             bindings = <
-&none  &kp F1             &kp F2            &kp F3          &kp F4           &kp F5  &kp F6                                                 &kp F7  &kp F8  &kp F9            &kp F10            &kp F11       &kp F12         &none
-&none  &kp TILDE          &kp GRAVE         &kp BACKSLASH   &kp PIPE         &none   &none                                                  &none   &none   &kp EQUAL         &kp PLUS           &kp MINUS     &kp UNDERSCORE  &none
-&none  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none   &none           &kp LEFT_ALT  &none      &none  &none  &none   &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NUMBER_9  &kp NUMBER_0    &none
-&none  &none              &none             &none           &none            &none                                 &none      &none                 &none   &none             &none              &none         &none           &none
-&none  &none              &none             &none           &none                    &kp LEFT_SHIFT  &none         &none      &none  &none  &none           &none             &none              &none         &none           &none
+&none  &kp F1             &kp F2            &kp F3          &kp F4           &kp F5  &kp F6                                                 &kp F7  &kp F8  &kp F9            &kp F10            &kp F11               &kp F12                &none
+&none  &kp TILDE          &kp GRAVE         &kp BACKSLASH   &kp PIPE         &none   &none                                                  &none   &none   &kp EQUAL         &kp PLUS           &kp MINUS             &kp UNDERSCORE         &none
+&none  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none   &none           &kp LEFT_ALT  &none      &none  &none  &none   &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none  &none              &none             &none           &none            &none                                 &none      &none                 &none   &none             &none              &none                 &none                  &none
+&none  &none              &none             &none           &none                    &kp LEFT_SHIFT  &none         &none      &none  &none  &none           &none             &none              &none                 &none                  &none
             >;
         };
 
