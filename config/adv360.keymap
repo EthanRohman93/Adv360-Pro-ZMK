@@ -31,16 +31,32 @@
         };
     };
 
+    macros {
+        quit_vim: quit_vim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp Q &kp ENTER>;
+            label = "QUIT_VIM";
+        };
+
+        open_vim: open_vim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp V &kp I &kp M &kp SPACE &kp DOT &kp ENTER>;
+            label = "OPEN_VIM";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp C_VOLUME_UP     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5  &none                                                                    &mo 3  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &bt BT_SEL 0
-&kp C_VOLUME_DOWN   &kp Q         &kp W         &kp E          &kp R         &kp T         &none                                                                    &none  &kp Y         &kp U         &kp I         &kp O         &kp P         &bt BT_SEL 1
-&kp C_FAST_FORWARD  &kp A         &kp S         &kp D          &kp F         &kp G         &none           &kp LEFT_ALT  &none         &none         &kp RIGHT_ALT  &none  &kp H         &kp J         &kp K         &kp L         &kp SEMI      &bt BT_SEL 2
-&kp C_REWIND        &kp Z         &kp X         &kp C          &kp V         &kp B                                       &kp LGUI      &kp LEFT_WIN                        &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &bt BT_SEL 3
-&kp C_PREVIOUS      &kp C_NEXT    &kp DELETE    &kp BACKSPACE  &kp TAB                     &kp LEFT_SHIFT  &kp LCTRL     &none         &none         &mo 2          &mo 1                &kp ENTER     &kp SPACE     &bt BT_PRV    &none         &bt BT_SEL 4
+&kp C_VOLUME_UP     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5  &caps_word                                                               &mo 3      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &bt BT_SEL 0
+&kp C_VOLUME_DOWN   &kp Q         &kp W         &kp E          &kp R         &kp T         &quit_vim                                                                &open_vim  &kp Y         &kp U         &kp I         &kp O         &kp P         &bt BT_SEL 1
+&kp C_FAST_FORWARD  &kp A         &kp S         &kp D          &kp F         &kp G         &none           &kp LEFT_ALT  &none         &none         &kp RIGHT_ALT  &none      &kp H         &kp J         &kp K         &kp L         &kp SEMI      &bt BT_SEL 2
+&kp C_REWIND        &kp Z         &kp X         &kp C          &kp V         &kp B                                       &kp LGUI      &kp LEFT_WIN                            &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &bt BT_SEL 3
+&kp C_PREVIOUS      &kp C_NEXT    &kp DELETE    &kp BACKSPACE  &kp TAB                     &kp LEFT_SHIFT  &kp LCTRL     &none         &none         &mo 2          &mo 1                    &kp ENTER     &kp SPACE     &bt BT_PRV    &none         &bt BT_SEL 4
             >;
         };
 
